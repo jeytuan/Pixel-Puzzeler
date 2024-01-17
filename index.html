@@ -1,0 +1,19 @@
+<canvas id="pixelCanvas" width="1024" height="1024"></canvas>
+
+<script>
+  const canvas = document.getElementById("pixelCanvas");
+  const ctx = canvas.getContext("2d");
+  const transitionDays = 5;
+  const millisecondsInADay = 24 * 60 * 60 * 1000;
+  
+  function updateImage(day) {
+    // Implement pixelation logic here
+    // Clear and redraw the pixelated image on the canvas
+  }
+
+  for (let day = 1; day <= transitionDays; day++) {
+    setTimeout(() => {
+      updateImage(day);
+    }, day * millisecondsInADay);
+  }
+</script>
